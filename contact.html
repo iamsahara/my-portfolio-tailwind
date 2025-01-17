@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow fixed top-0 left-0 w-full z-10">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <a href="index.html" class="text-2xl font-bold">Sahar</a>
+      <nav>
+        <ul class="flex gap-4">
+          <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
+          <li><a href="about.html" class="hover:text-blue-500">About</a></li>
+          <li><a href="skills.html" class="hover:text-blue-500">Skills</a></li>
+          <li><a href="projects.html" class="hover:text-blue-500">Projects</a></li>
+          <li><a href="contact.html" class="text-blue-500 font-bold">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="mt-40 p-6">
+    <section id="contact" class="max-w-5xl mx-auto bg-white rounded-lg shadow p-6">
+      <h1 class="text-3xl font-bold mb-6 text-center">Contact Me</h1>
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="space-y-4">
+          <div class="flex items-start gap-4">
+            <div class="p-3 bg-red-100 text-red-600 rounded-full">
+              <i class="bi bi-envelope text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold">Email Me</h3>
+              <p>sahar.abdollahi@torontomu.ca</p>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="flex items-start gap-4">
+            <div class="p-3 bg-yellow-100 text-yellow-600 rounded-full">
+              <i class="bi bi-share text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold">Social Profiles</h3>
+              <div class="flex gap-4">
+                <a href="https://github.com/iamsahara" class="hover:opacity-75">
+                  <img src="./src/assets/img/icon/github.svg" alt="GitHub" width="24" />
+                </a>
+                <a href="https://www.linkedin.com/in/saharabdollahi/" class="hover:opacity-75">
+                  <img src="./src/assets/img/icon/LinkedIn_icon.svg.png" alt="LinkedIn" width="24" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form
+        action="https://formspree.io/f/xblljevj"
+        method="POST"
+        class="mt-6 grid gap-4"
+      >
+        <div class="grid gap-4 md:grid-cols-2">
+          <input type="text" name="name" placeholder="Your Name" required class="p-3 border rounded-md" />
+          <input type="email" name="email" placeholder="Your Email" required class="p-3 border rounded-md" />
+        </div>
+        <input type="text" name="subject" placeholder="Subject" required class="p-3 border rounded-md" />
+        <textarea name="message" rows="4" placeholder="Message" required class="p-3 border rounded-md"></textarea>
+        <button type="submit" class="w-full p-3 bg-blue-500 text-white rounded-md hover:bg-blue-600">
+          Send Message
+        </button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
