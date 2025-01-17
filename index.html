@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sahar - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white shadow z-50">
+      <div class="container mx-auto flex items-center justify-between px-6 py-4">
+        <a href="index.html" class="text-2xl font-bold text-blue-500">Sahar</a>
+        <nav class="hidden md:flex space-x-6">
+          <a href="index.html" class="font-semibold text-blue-500">Home</a>
+          <a href="about.html" class="hover:text-blue-500">About</a>
+          <a href="skills.html" class="hover:text-blue-500">Skills</a>
+          <a href="projects.html" class="hover:text-blue-500">Projects</a>
+          <a href="contact.html" class="hover:text-blue-500">Contact</a>
+        </nav>
+        <button class="md:hidden text-gray-600 text-2xl" id="menu-toggle">
+          ☰
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <nav class="hidden md:hidden bg-white shadow-md px-6 py-4" id="mobile-menu">
+        <a href="index.html" class="block py-2 font-semibold text-blue-500">Home</a>
+        <a href="about.html" class="block py-2 hover:text-blue-500">About</a>
+        <a href="skills.html" class="block py-2 hover:text-blue-500">Skills</a>
+        <a href="projects.html" class="block py-2 hover:text-blue-500">Projects</a>
+        <a href="contact.html" class="block py-2 hover:text-blue-500">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="mt-24">
+      <section class="text-center bg-white py-16">
+        <div class="container mx-auto">
+          <img
+            src="./src/assets/img/Image.jpeg"
+            alt="Sahar Abdollahi"
+            class="w-40 h-40 mx-auto rounded-full border-4 border-blue-500 shadow-lg object-cover"
+          />
+          <h1 class="mt-4 text-3xl font-bold text-gray-800">Sahar Abdollahi</h1>
+          <p class="mt-2 text-lg text-gray-600">
+            <span
+              id="typed-text"
+              class="font-semibold text-blue-500"
+            ></span>
+          </p>
+          <a
+            href="./src/assets/resume/sahar-resume-2025.pdf"
+            download
+            class="mt-6 inline-block px-6 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600 transition"
+          >
+            Download Resume
+          </a>
+          <div class="flex justify-center space-x-4 mt-6">
+            <a
+              href="https://github.com/iamsahara"
+              class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full shadow transition"
+              target="_blank"
+            >
+              <img
+                src="./src/assets/img/icon/github.svg"
+                alt="GitHub"
+                class="w-6 h-6"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/saharabdollahi/"
+              class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full shadow transition"
+              target="_blank"
+            >
+              <img
+                src="./src/assets/img/icon/LinkedIn_icon.svg.png"
+                alt="LinkedIn"
+                class="w-6 h-6"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
